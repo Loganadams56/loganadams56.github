@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tabel, td , th {
+            border: 1px solid green;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+
+        th { background:rgb(0, 0, 0) ;}
+        .reheader { background: dark rgb;}
+
+        body {
+            background: linear-gradient(#077907, );
+            background-size: 100% 350%;
+        }
+</style>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th scope="col">images</th>
+            <th scope="col">video</th>
+            <th scope="col">audio</th>
+     </tr>
+ </thead>
+    <tbody>
+        <tr>
+            <th>
+            <th> <img src="" class="reheader">1st hour</th>
+            <td colspan="5"><center><></video></center></td>
+        </tr>
+        <tr>
+            <th scope="row" class="reheader">2nd hour</th>
+            <td colspan="5"><center>transportation tech</center></td>
+        <tr>
+            <th scope="row" class="reheader">3rd hour</th>
+            <td colspan="5"><center>physical science </center></td>
+        </tr>
+        <tr>
+            <th scope="row" class="reheader">4th hour</th>
+            <td colspan="5"><center>U.S history</center></td>
+        </tr>
+        <tr>
+            <th scope="row" class="reheader">5th hour</th>
+            <td colspan="5"><center>game sign</center></td>
+        </tr>
+        <tr>
+            <th scope="row" class="reheader">6th hour</th>
+            <td colspan="5"><center>health</center></td>
+        </tr>
+        <tr>
+            <th scope="row" class="reheader">7th hour</th>
+            <td colspan="5"><center>geometry</center></td>
+        </tr>
+            <th scope="row" class=""reheader>8th hour</th>
+            <td colspan="5"><center>english</center></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
+</body>
+</html>
