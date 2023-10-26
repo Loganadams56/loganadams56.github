@@ -1,0 +1,20 @@
+
+tabel, td , th {
+    border: 1px solid rgb(197, 161, 161);
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.large { width: 400; height: 400px;}
+.medium { width: 275; height: 275px;}
+.small { width: 150; height: 150px;}
+
+
+th { background:rgb(252, 134, 134) ;}
+
+.reheader { background: dark rgb;}
+
+body {
+    background: linear-gradient(white );
+    background-size: 100% 350%;
+}
