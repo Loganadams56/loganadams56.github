@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudoclasses</title>
+    <style>
+        /* Change the highlight color */
+        *::selection { background: pink; }
+        *::-moz-selection { background: whitesmoke}
+
+        a:hover {
+            color: blue;
+            background: gray;
+            text-decoration: underline;
+        }
+
+        a:visited { color: black; }
+        a:active { color: red; }
+
+        input {
+            /* top | right | bottom | left */
+            padding: 6px 12px 6px 12px;
+            border: 2px solid purple;
+            color: blue;
+        }
+        input[type=text] { color: purple; }
+        input[type=text]:focus {
+            color: blueviolet;
+            border: 5px solid plum;
+        }
+        input[type=submit]:hover { background: rgb(178, 178, 172); }
+        input[type=submit]:active { background: rgb(244, 240, 238); }
+
+        img { border: 3px solid transparent; }
+        img:hover { border: 3px solid rgb(225, 217, 217); }
+    </style>
+</head>
+<body>
