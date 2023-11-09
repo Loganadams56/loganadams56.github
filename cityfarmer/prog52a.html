@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="len">lenghtr:</label>
+    <input type="number" id="len" name="len">
+
+    <label for="wid">width:</label>
+    <input type="number" id="wid" name="wid">
+
+    <button onclick="
+        var length = document.getElementById('len').value;
+        var width = document.getElementById('wid').value;
+        var area = length * width;
+        var perim = 2 * length + 2 * width;
+        document.writeln('area: ' + area + ' perimeter: ' + perim);
+    ">calculate area and perimeter</button>
+</body>
+</html>
