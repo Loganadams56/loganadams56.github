@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="sl">
+            <option value="" selected disabled>choose a car</option>
+            <option value="1970 vw bug">1970 vw bug</option>
+            <option value="1979 firerbird">1979 firerbird</option>
+            <option value="1980 subary<">1980 subary</option>
+            <option value="1975 cutlass">1975 cutlass</option>
+    </select>
+    <button onclick="calc();">calculate</button>
+    <p id="output"</p>
+
+        <script>
+            function calc() {
+                var car = document.getElementById("sl").value;
+                var miles = 0;
+                var gallons = 0;
+                var mpg = 0;
+
+                if (car == "1970 vw bug") {
+                miles = 286;
+                gallons = 9;
+                }
+                if (car == "1979 firerbird") {
+                    miles = 412;
+                    gallons = 40;
+                }
+                if (car == "1980subary") {
+                    miles = 361;
+                    gallons = 18;
+                }
+                if (car == "1975 cutlass") {
+                    miles = 161;
+                    gallons = 11;
+                }
+
+                mpg = miles / gallons
+                var out = document.getElementById("output");
+                out.innerText = "MPG: " + mpg.toFixed(4);
+                
+            
+            }
+        </script>
+</body>
+</html>
