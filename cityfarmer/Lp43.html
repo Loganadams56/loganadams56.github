@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="eggs">Enter # of eggs purchased: </label>
+    <input type="number" id="eggs" name="eggs" min="0">
+    <button onclick="calculate()">calculate</button>
+    <p id="output"></p>
+    <script>
+        function calculate() {
+            var eggs = Number(document.getElementById("eggs").value);
+            var dozens = Math.floor(eggs / 12);
+            var remainder = eggs % 12;
+            var price = 0.0;
+            var total = 0.0;
+            var out = document.getElementById("output");
+        
+            if (dozens < 4  ) {
+                price = 0.5;
+            }
+            else if (dozens >= 4 && dozens < 6 ) {
+                price = 0.45;
+            }
+            else if (dozens >= 6 && dozens < 11) {
+                price = 0.4;
+            }
+            else if (dozens >= 11 ) {
+                price = 0.35
+            }
+            total = price * dozens + remainder / 12 * price;
+            if (total > 0) {
+    
+               out.innerHTML = "The bill equals to $ " + total.toFixed(2); //round it to a cent
+              
+            }
+            
+        }
+    </script>
+</body>
+</html>
