@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dilog {
+            opacity: 0.75;
+            background: linear-gradient(
+                magenta, blue, purple, white
+
+            );
+        }
+    </style>
+</head>
+<body>
+    <dilog id="modal">
+        <p>this modal as a cool background.</p>
+        <button onclick="
+        document.getElementById('modal').close();"">Close dilog</button>
+    </dilog>
+    <button onclicks="
+        document.getElementById('modal').showmodal();
+        ">show dialog</button>"
+</body>
+</html>
