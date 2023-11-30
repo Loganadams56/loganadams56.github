@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <input type="number" id="n1" name="n1">
+    <select id="operand" name="operand"
+        <option disable selected value>--select an option--</option>
+        <option value="+">+</option>
+        <option value="+">+</option>
+        <option value="+">+</option>
+        <option value="+">+</option>
+    ></select>
+    <input type="number" id="n2" name="n2">
+    <p id="output"></p>
+    <button onclick="run()">calculate</button>
+
+    <script>
+       function run() {
+           var num1 = Number(document.getElementById("n1").value);
+           var num2 = Number(document.getElementById("n2").value);
+           var op = document.getElementById("operand").value;
+           var result = 0;
+
+           switch (op) {
+               case "+":
+                   result = num1 + num2;
+                   break;
+                case "*":
+                   result = num1 * num2;
+                   break;
+             case "/":
+                   result = num1 / num2;
+                   break;
+            case "-":
+                   result = num1 - num2;
+                   break;
+                default:
+                    document.getElementById("output").innerText =
+                    "invaild option selected!";
+                    return      
+                   
+           }
+           document.getElementById("output").innertext = 
+           num1 + " " + op + " " + num2 + " = " + result;
+       } 
+    </script>
+</body>
+</html>
