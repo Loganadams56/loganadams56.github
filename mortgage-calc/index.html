@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Balance Calculator.</title> 
+   <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+  
+
+   <label for="P">principal: </label> 
+   <input type="number" name="p" id="p"><br/>
+   <label for="r">Interest Rate %(e.g. 7.9):</label>
+   <input type="number" name="r" id="r"><br/>
+   <label for="n">Num of years: </label> 
+   <input type="number" name="n" id="n"><br/>
+   <label for="m">monthly payment: </label> 
+   <input type="number" name="m" id="m"><br/>
+<br>
+
+<button onclick="calc()">Calculate</button>
+<button onclick="reset()">clear</button>
+<p id="output"></p>
+
+   <script>
+      function reset() {
+         document.getElementById("p").value = "";
+         document.getElementById("r").value = "";
+         document.getElementById("n").value = "";
+         document.getElementById("m").value = "";
+          document.getElementById("output").value = "";
+         
+      }
+      function calc() {
+         var p = document.getElementById("p").value = "";
+        var r = document.getElementById("r").value = "";
+         var t = document.getElemenyId("n").value = "";
+         var m =document.getElementById("m").value = "";
+         var n = 12;
+         var b = (p*(1+r/n))**(n*t) - ((m((1+r/n))**(n*t)-1))/(r/n);
+         document.getElementById("output").value = b;
+      }
+   </script>
+</body>
+</html>

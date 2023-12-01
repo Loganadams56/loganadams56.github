@@ -1,10 +1,19 @@
 body{
-background: rgb(11,1,1);
-background: linear-gradient(90deg, rgba(11,1,1,1) 0%, rgba(253,29,29,1) 50%, rgba(11,1,1,1) 100%);
+    color: black;
+    background: rgb(99,125,230);
+    background: linear-gradient(90deg, rgb(14, 42, 155) 0%, rgba(29,253,156,1) 50%, rgb(35, 9, 122) 100%);
+font-family: Comic Sans ms;
+
 }
 button{
     height: 25px;
     width: 70px;
     text-align: center;
     padding: 0%;
+    
+    
 }
+input{
+width: 76px;
+}
+
