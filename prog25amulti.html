@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getAreaAndPerim(lenght, width) {
+            var area = lenght * width;
+            var perim = 2 * lenght + 2 * width;
+            return [area, perim];
+        }
+
+        // make random numbers between [1,10] as interger 
+        var num1 = math.round(math.random() * 10) + 1;
+        var num2 = math.round(math.random() * 10) + 1;
+        var AandP =  getAreaAndPerim(num1, num2);
+        var area = Aand[0];
+        var perim = AandP[1];
+        document.writeln("length: " + num1 + "<br/>")
+        document.writeln("width: " + num2 + "<br/>")
+        document.writeln("area: " + area + "<br/>")
+        document.writeln("perim: " + perim + "<br/>")
+
+    </script>
+</body>
+</html>

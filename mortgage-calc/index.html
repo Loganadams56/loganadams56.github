@@ -35,13 +35,13 @@
          
       }
       function calc() {
-         var p = document.getElementById("p").value = "";
-        var r = document.getElementById("r").value = "";
-         var t = document.getElemenyId("n").value = "";
-         var m =document.getElementById("m").value = "";
+         var p = document.getElementById("p").value;
+        var r = document.getElementById("r").value / 100;
+         var t = document.getElementById("n").value;
+         var m = document.getElementById("m").value;
          var n = 12;
-         var b = (p*(1+r/n))**(n*t) - ((m((1+r/n))**(n*t)-1))/(r/n);
-         document.getElementById("output").value = b;
+         var b = p * ((1 + r / n) ** (n * t)) - (m * ((1 + r / n) ** (n * t) - 1)) / (r / n);
+         document.getElementById("output").innerHTML = b.toFixed(2);
       }
    </script>
 </body>
