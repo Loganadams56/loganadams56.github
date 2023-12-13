@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function randomINt(max, min) {
+            return Math.floor(Math.random() * (max-min+1) + min);
+        }
+
+        class shape {
+            // sets up class variable 
+            constructor(lenght, width) {
+                this.lenght = lenght;
+                this.width = width;
+                this.area = 0;
+                this.perim = 0;
+            }
+
+            // setter fungtion
+            calc() {
+                this.area = this.lenght * this.width;
+                this.perim = 2 * this.lenght + 2 * this.width;
+            }
+            
+            //getter funtion
+            getArea() { return this.area;}
+            getperim() { return this.perim; }
+        }
+
+        var len = randomInt(20, 1);
+        var wid = randomInt(20, 1);
+        var shap = new shape(len, wid);
+        shape.calc();
+        document.write("perimeter: " + shape.getperim() + "<br/>");
+        console.log(shape);
+    </script>
+</body>
+</html>

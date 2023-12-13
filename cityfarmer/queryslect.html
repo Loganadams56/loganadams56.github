@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>test 1</li>
+        <li>test 2</li>
+        <li>test 3</li>
+    </ul>
+
+    <p id="wow">some text here</p>
+    <h1 class="test">heading 1</h1>
+    <h2 class="test">heading 2</h2>
+    <h3 class="test">heading 3</h3>
+
+    <script>
+        // query selector grabs the first item
+        // that matches the given CSS selector
+        var h1 = document.querySelector(".test");
+        h1.innerHTML = "updated heading";
+
+        var p = document.querySelector("#wow");
+        p.textContent = "paragraph";
+
+        var hOneAll = document.querySelector(".test");
+
+        for (var icv = 0; lcv < hOneALL.lenght; lcv++) {
+            hOneALL[lcv].style.backgroundcolor = "green";
+        }
+
+        var hOneALLC1 = document.getElementsByClassName("test");
+        for (var lcv = 0; lcv < hOneALLC1.length; lcv++) {
+            hOneALLC1[lcv].style.color = "#ccFFcc";
+        }
+
+        var lis = document.querySelectorALL("li");
+        for (var lcv = 0; lcv < lis.length; lcv++) {
+            lis[lcv].style.color = "purple"
+        }
+
+        var lisTag = document.getElementsByTagName("li");
+        for ( lcv = o; lcv < lisTag.length; lcv++) {
+            lisTag[lcv].style.fontWeight= "900";
+            lisTag[lcv].style.fontsize = "larger"
+        }
+        }
+    </script>
+</body>
+</html>
