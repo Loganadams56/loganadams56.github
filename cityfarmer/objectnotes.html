@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var hotel = {
+            name: "holiday Inn",
+            rooms: 50,
+            booked: 30,
+            checkAvailable: function() {
+                return this.rooms - this.booked;
+            }
+        };
+
+        document.write(hotel['name'] + "<br/>");
+        document.write(hotel.name + "<br/>");
+        document.write("rooms: " + hotel.rooms + "<br/>");
+        document.write("Available: " + hotel.checkAvailable() + "<br/>");
+
+        // constructor Notation
+        function hotelconstructor(name, rooms, booked) {
+            this.name = name;
+            this.rooms = rooms;
+            this.booked = booked;
+            this.checkAvailable = function() {
+                return this.rooms - this.booked;
+            };
+        }
+
+        var hotel2 = new hotelconstructor("microtel", 25, 5);
+        document.write("name: " + hotel2.name + "<br/>");
+        document.write("rooms available: " + hotel2.checkavailable() + "<br/>");
+
+        // Class Notetation
+        class hotel {
+            //constructor sets up are variables for our objects
+            constructor(name, rooms, booked) {
+                this.name = name;
+                this.rooms = rooms;
+                this.booked = booked;
+            }
+
+            checckAvailable() {
+                return this.rooms - this.booked;
+            }
+        }
+        // a class is just a cillection of variables amd/or funtions 
+        var hotel3 = new hotel("supr 8", 30, 2);
+        document.write("name: " + hotel3.name + "<br/>");
+        document.write("rooms available: " + hotel3.checkAvailable() + "<br/>");
+    </script>
+</body>
+</html>

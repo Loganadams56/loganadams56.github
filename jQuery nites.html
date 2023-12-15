@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery notes</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p id="test1">This is a paragraph</p>
+    <p id="test2">Heres another paragraph</p>
+    <p>Input feild 
+        <input type="text" id="text3"value="placeholder"></p>
+        <button id-="btn1">set Text</button>
+        <button id-="btn2">set HTML</button>
+        <button id-="btn3">set Value</button>
+        <button id-="btn4">Append Text</button>
+
+        <p id="gtest">Heres some <b>bold</b> text in a paragraph</p>
+        <button id-="gtbn1">Show text</button>
+        <button id-="gtbn2">Show HTML</button>
+
+        <ol>
+            <li> item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <button id="ibtn">Append list Item</button>
+
+        <div style="background: green; width: 100px;
+        height: 100px; position: absolute"></div>
+        <button id="abtn">Run Animation</button>
+
+        <script>
+            $(documet).ready(function(){
+                // holds all ur code in document.ready
+                $("#btn1").click(funtion(){
+                    $("#test1").text("hello, world!");
+                });
+                $("#btn1").click(funtion(){
+                    $("#test2").text("hello, world!</b>");
+                });
+                $("#btn1").click(funtion(){
+                    $("#test3").valv("abc123");
+                });
+
+                $("#gbtn1").click(funtion(){
+                   alert(text: " + $("#gtest).text());
+                });
+                $("#gbtn2").click(funtion(){
+                   alert(text: " + $("#gtest).html()
+                });
+
+                $("#gbtn3").click(funtion(){
+                    $("p").append(" <b>appended Text</b>");
+                });
+                $("#gbtn4").click(funtion(){
+                    $("ol").append("<li>appended Text <li>");
+                    });
+
+                $("p").append(" <b>appended Text</b>");
+                    $("div").animate({left: '250px'});
+                    $("div").fadeOut(3000); //ms
+                   
+        </script>
+    
+
+</body>
+</html>
