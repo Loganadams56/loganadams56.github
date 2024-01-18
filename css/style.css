@@ -6,6 +6,8 @@ body{
 input{
 width: 90px;
 height: 60;
+background-color: rgb(0, 22, 149));
+
 }
 
 img{
@@ -14,11 +16,17 @@ img{
 }
 
 button{
-   
+   background-color: rgb(70, 85, 126);
 }
 
 textarea{
     height: 50px;
     width: 160px;
     
+}
+.header{
+    background-color: rgb(7, 7, 7);
+    height: 15px;
+    width: 20%;
+    padding 
 }
